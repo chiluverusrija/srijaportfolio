@@ -1,0 +1,46 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;
+    margin: 0;
+}
+
+.whole {
+   width: 350px;
+   background-color: black;
+   border-radius: 15px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.Srija{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    padding:15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.message{
+    max-width:75%;
+    padding:12px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.right{
+    background-color: aqua;
+    color: black;
+    margin-left: auto;
+    margin-bottom:15px;
+    border-bottom-right-radius: 0;
+    
+}
+.left{
+    background-color: darkgrey;
+    color:antiquewhite;
+    margin-right: auto;
+    border-bottom-left-radius:0;
+}

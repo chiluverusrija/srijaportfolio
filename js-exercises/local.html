@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>local</title>
+</head>
+<body>
+
+<script>
+localStorage.setItem("name","srija");
+localStorage.setItem("id",192);
+localStorage.setItem("city","hyderabad");
+
+let student={
+    name:"srija",
+    id:192
+};
+
+localStorage.setItem("student", JSON.stringify(student));
+
+let fruits=["apple","orange","banana"];
+localStorage.setItem("fruitlist", JSON.stringify(fruits));
+
+let storedFruits = JSON.parse(localStorage.getItem("fruitlist"));
+console.log(storedFruits);
+</script>
+
+</body>
+</html>

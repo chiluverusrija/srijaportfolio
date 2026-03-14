@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for each</title>
+</head>
+<body>
+<script>
+let list =[10,20,"srija",12.30];
+console.log(list);
+
+list.forEach((item)=>{
+    console.log(item)
+});
+
+let fruits=["banana","mounika","apple","sniggggg"];
+fruits.forEach((fruit)=>{
+    console.log(fruit);
+});
+
+function message(){
+    console.log("srija");
+}
+message();
+
+function add(a,b){
+    return a+b;
+}
+
+let result = add(7,12);
+console.log(result);
+console.log(add(30,50));
+
+const multiply=(a,b)=>{
+    return a*b;
+}
+console.log(multiply(20,30));
+
+//arrow function without arguments
+let greet=()=>{
+    console.log("Hi good morning");
+}
+greet();
+
+// renamed function
+let addNumbers=()=>{
+    let a=20;
+    let b=30;
+    return a+b;
+}
+console.log(addNumbers());
+
+let product=(a,b)=>{
+    return a*b;
+};
+console.log(product(20,10));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.decor{
+    background-color: rgb(97, 138, 168);
+     height:100vh;
+    background-size: cover; 
+}
+.container{
+    text-align: center;
+    font-size:45px ;font-weight: bold;
+}
+.background{
+    text-align: center;
+} 
+
+

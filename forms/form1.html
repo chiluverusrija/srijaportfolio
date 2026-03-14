@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student Admission Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <h2>Student Admission Form</h2>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>Full Name</label>
+                <input type="text" required autofocus placeholder="Enter Full Name">
+
+                <label>E Mail</label>
+                <input type="email" required placeholder="Enter your mail">
+
+                <label>Password</label>
+                <input type="password" min="6" required placeholder="Enter Your Password">
+
+                <label>Mobile Number</label>
+                <input type="tel" pattern="[0-9]{10}" required placeholder="Enter Your Phone Number">
+
+                <label>Date of Birth</label>
+                <input type="date" required placeholder="Enter the date of birth">
+
+                <label>Age</label>
+                <input type="number" min="18" max="70" required placeholder="Enter your Age">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Details </legend>
+                <label>Courses</label>
+                <select required>
+                    <option name=""> select</option>
+                    <option>B.Tech</option>
+                    <option>M Tech</option>
+                    <option>Masters</option>
+                </select>
+                <label>Branch </label>
+                <input list="Branch">
+                <datalist type="text">
+                    <option>CSE</option>
+                    <option>ECE </option>
+                    <option>AI DS</option>
+                    
+                </datalist><br>
+                <label>Percentage</label>
+                    <input type="range" min="35" max="100">
+                
+            </fieldset>
+            <fieldset>
+                <legend> Preferences</legend>
+                <label>Gender</label>
+                <input type="radio" name="gender"> Female 
+               <input type="radio" name="gender"> Male
+              <br>
+               <label>Languages Known</label>
+               <input type="checkbox">Telugu
+               <input type="checkbox">Hindi
+               <input type="checkbox">English
+              <br>
+               <label>Submit Document</label>
+               <input type="file">
+
+               <label>Comments</label>
+               <textarea rows="5"></textarea>
+            </fieldset>
+            <button>Submit</button>
+            <button>Reset</button>
+        </form>
+    </body>
+</html>

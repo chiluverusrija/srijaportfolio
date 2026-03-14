@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Projects | Srija Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* This is the exact same CSS as your main page */
+body { margin: 0; font-family: 'Poppins', sans-serif; background: #0f172a; color: white; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+header { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 24px; font-weight: 700; color: white; text-decoration: none; }
+.nav-links { display: flex; gap: 25px; list-style: none; }
+.nav-links a { text-decoration: none; color: white; font-weight: 500; }
+.btn { padding: 10px 20px; border-radius: 30px; text-decoration: none; background: linear-gradient(45deg, #6366f1, #06b6d4); color: white; font-weight: 600; border: none; }
+section { padding: 70px 0; }
+.section-header { text-align: center; margin-bottom: 40px; }
+.grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.glass-card { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(12px); transition: .3s; height: 100%; box-sizing: border-box;}
+.glass-card:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.5); }
+.project-img { width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.1); }
+.card-link { display: inline-block; margin-top: 15px; text-decoration: none; color: #60a5fa; font-weight: 600; }
+footer { text-align: center; padding: 30px 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<header>
+    <nav class="container">
+        <a href="index.html" class="logo">Srija</a>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+        </ul>
+        <a href="index.html#contact" class="btn">Let's Talk</a>
+    </nav>
+</header>
+
+<section class="container">
+    <div class="section-header">
+        <h2>My Java Projects</h2>
+        <p style="color: #aaa; margin-bottom: 20px;">Applications and tools built using Java.</p>
+        <a href="index.html#skills" class="btn">← Back to Skills</a>
+    </div>
+
+    <div class="grid-layout">
+        
+        <div class="glass-card">
+            <img src="your-java-screenshot1.jpg" class="project-img" alt="Project Screenshot">
+            
+            <h3>Library Management System</h3>
+            <p style="font-size: 14px; color: #ccc;">A desktop application built with Java Swing and MySQL to manage book inventory and user borrowing.</p>
+            
+            <a href="#" target="_blank" class="card-link">View Source Code →</a>
+        </div>
+
+        <div class="glass-card">
+            <img src="your-java-screenshot2.jpg" class="project-img" alt="Project Screenshot">
+            
+            <h3>Bank Account Manager</h3>
+            <p style="font-size: 14px; color: #ccc;">An object-oriented Java program that handles deposits, withdrawals, and account creation using Core Java.</p>
+            
+            <a href="#" target="_blank" class="card-link">View Source Code →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Srija — Portfolio
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Age Predictor</h1>
+    <label>Guess Age</label>
+    <input id="age" type="number" placeholder="Enter Age">
+    <button id="check">Check</button>
+    <p id="result"></p>
+    <script>
+        
+        const ageInput = document.getElementById("age");
+        const checkBtn = document.getElementById("check");
+        const result = document.getElementById("result");
+        let rand = Math.ceil(Math.random()*50);
+        
+        console.log(rand);
+        checkBtn.onclick = function()
+        {
+            let age = Number(ageInput.value);
+            if(age < rand)
+            result.textContent = "age is too Low, Try Again ..";
+            else if(age > rand)
+            result.textContent = "age is too high, try again";
+            else
+            result.textContent = "You guessed Correctly";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("https://dog.ceo/api/breed/bluetick/images/random")
+
+        .then( function (response){
+            return response.json();
+        })
+        .then( data =>{
+            let imgElement = document.createElement("img");
+            imgElement.src = data.message;
+            document.body.appendChild(imgElement);
+            let info = data.status;
+            console.log(info);
+        })
+        .catch((error)  =>
+    {
+        console.log("Error : " +error);
+    })
+    </script>
+</body>
+</html>
